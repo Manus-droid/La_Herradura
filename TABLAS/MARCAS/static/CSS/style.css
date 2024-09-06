@@ -12,14 +12,14 @@ body {
 }
 /*aAAAAAAApertura de caja*/
 
-.header {
+/*.header {
     background-color: #333;
     color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 .content {
     display: flex;
     margin-top: 20px;
