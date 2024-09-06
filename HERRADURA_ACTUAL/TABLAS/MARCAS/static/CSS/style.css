@@ -1,0 +1,602 @@
+/* estilos grles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenes/32.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    display: flex;
+}
+/*aAAAAAAApertura de caja*/
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+.sales-list {
+    flex: 1;
+    margin-right: 20px;
+}
+.buttons {
+    flex: 1;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.animal-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+.category-buttons {
+    display: none;
+}
+.category-buttons button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+.action-buttons {
+    margin-top: 20px;
+}
+.action-buttons button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+/*apertura de caja*/
+
+
+/* estilos nav */
+.navbar {
+    background: linear-gradient(45deg, rgba(241, 170, 14, 0.959), rgba(70, 247, 253, 0.938));
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /*hola*/
+    z-index: 1000;
+    width: 200px;
+    height: 100vh;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nav-item {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-link:hover {
+    color: #d93425;
+    transform: scale(1.1);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s, left 0.3s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link.active::before {
+    width: 100%;
+    left: 0;
+}
+/* Formulario de búsqueda */
+/* Encabezado de la tarjeta */
+/* Estilo para la tarjeta principal */
+.card {
+    background: linear-gradient(135deg, #adacac 0%, #000000 50%, #ffffff 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(66, 65, 65, 0.2);
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff6f01 0%, #e7a1a1 100%);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.btn-agregar-producto, .btn-agregar, .btn-buscar, .btn-todos-productos {
+    padding: 12px 25px;
+    background-color: #ff6f00;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-agregar-producto:hover, .btn-agregar:hover, .btn-buscar:hover, .btn-todos-productos:hover {
+    background-color: #ff8c42;
+    transform: translateY(-3px);
+}
+
+/* Título de productos */
+.titulo-productos {
+    font-size: 35px;
+    color: #cab09c;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Tabla */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla th, .tabla td {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.tabla th {
+    background: linear-gradient(135deg, #ff6f01 0%, #e7a1a1 100%);
+    font-weight: bold;
+}
+
+.tabla td {
+    background-color: #464646;
+}
+
+.tabla tr:hover {
+    background-color: #333333;
+}
+
+/* Botones de editar/borrar */
+.btn-editar, .btn-borrar {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-editar {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.btn-editar:hover {
+    background-color: #27ae60;
+}
+
+.btn-borrar {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.btn-borrar:hover {
+    background-color: #c0392b;
+}
+
+
+/* estilos para la sección hero */
+.hero-section {
+    background-image: url(../imagenes/7.jpg);
+    background-size: 2000px 700px; 
+    background-position: left center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    padding: 60px 0;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
+    border-radius: 40px;
+    margin-left: 10px;
+    margin-top: 120px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #fdb226, #faeeed, #00bfff, #ff6347);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 50s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.lead {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* sombra de texto para resaltar */
+}
+
+.btn-custom {
+    background-color: #ff6f61; /* color de fondo del botón */
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #ff3f34; /* color al pasar el cursor */
+    transform: translateY(-3px);
+}
+
+.btn-custom:active {
+    background-color: #e63946; /* color clic */
+    transform: translateY(2px);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------agregar.html-----------------------------------*/
+/* Estilo para el contenedor principal */
+.main-container {
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilo para el encabezado principal */
+.heading-main {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e69a36;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo del botón "Regresar" */
+/* Estilo para el botón "Regresar" */
+.btn-return {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6f00, #ff8c00);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 2rem; /* Ajusta el margen para posicionarlo más abajo */
+}
+
+.btn-return:hover {
+    background: linear-gradient(90deg, #ff8c00, #ff6f00);
+    transform: scale(1.05);
+}
+
+/* Estilo para el formulario de selección */
+.form-select-container {
+    margin-bottom: 2rem;
+}
+
+.form-group-custom {
+    margin-bottom: 1rem;
+}
+
+.form-select {
+    background-color: #333; 
+    color: #fff; 
+    border: 1px solid #666; 
+    padding: 0.5rem; 
+    border-radius: 0.5rem; 
+    font-size: 1rem; 
+}
+
+
+.form-select option {
+    color: #fff; 
+    background-color: #333; 
+}
+
+
+.form-select option:checked {
+    color: #ff6600; /
+}
+
+
+/* Estilo para el contenedor del formulario */
+.form-card-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el botón de enviar formulario */
+.btn-submit {
+    border: none;
+    outline: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    color: #fff;
+    font-size: 1rem;
+    background: #00bfff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+}
+
+.form-group-custom label {
+    font-size: 1.2rem; 
+    font-weight: 500; 
+    color: #fff; 
+    margin-bottom: 0.5rem; 
+}
+.form-card-title {
+    color: #fff; /* Establece el color de texto a blanco */
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente si es necesario */
+    font-weight: 600; /* Ajusta el peso de la fuente si es necesario */
+    text-align: center; /* Opcional: centra el texto */
+    margin-bottom: 1rem; /* Opcional: añade un margen inferior */
+}
+/* Estilo para el cuerpo de la tarjeta del formulario */
+.form-card-body {
+    
+    color: #f8f8f8; /* Color de texto oscuro para contraste (puedes ajustar esto según tu diseño) */
+   
+}
+
+
+/*-------------------------agregar.html-------------------------------*/
+/*------------------- login Andia--------------------------*/ 
+.contenedor-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que ocupe todo el alto de la ventana */
+    width: 100%;
+}
+
+.formulario-inicio-sesion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.tarjeta {
+    background-image: linear-gradient(163deg, #f13d0694 0%, #e06908 100%);
+    border-radius: 40px;
+    transition: all 0.3s;
+    padding: 10px;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.tarjeta-interior {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.tarjeta-interior:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.tarjeta:hover {
+    box-shadow: 0px 0px 30px 1px rgba(245, 25, 25, 0.918);
+}
+
+#encabezado {
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em;
+    border-radius: 15px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    height: 50px;
+    width: auto;
+}
+
+.icono-entrada {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+}
+
+.campo-entrada {
+    background: none;
+    border: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.boton-iniciar-sesion, .boton-olvidar-contraseña {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s ease-in-out;
+    background-color: #030000;
+    color: white;
+}
+
+.boton-iniciar-sesion:hover {
+    background-color: rgb(236, 226, 226);
+    color: rgba(139, 129, 129, 0.76);
+}
+
+.boton-olvidar-contraseña {
+    margin-bottom: 3em;
+}
+
+.boton-olvidar-contraseña:hover {
+    background-color: rgb(5, 4, 4);
+    color: rgb(255, 177, 9);
+}
+
+/*------------------- login Andia--------------------------*/ 
+/*------------------- insertar css de lo que se hace aki --------------------------*/ 
+/*------------------- Ventana emergente(modal) del monto inicial--------------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
