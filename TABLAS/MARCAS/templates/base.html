@@ -25,8 +25,8 @@
     </head>
 
     {% if user.is_authenticated %}
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <div class="nav navbar-nav">
+    <nav class="menu-principal">
+        <div class="nav-content">
             <!-- <a class="nav-item nav-link active" href="{% url 'inicio' %}" aria-current="page">INICIO</a>
             <a class="nav-item nav-link active" href="{% url 'marcas' %}" aria-current="page">MARCAS</a>
             <a class="nav-item nav-link active" href="{% url 'edades' %}" aria-current="page">EDADES</a>
@@ -36,9 +36,10 @@
             <a class="nav-item nav-link active" href="{% url 'categorias' %}" aria-current="page">CATEGORIAS</a>
             <a class="nav-item nav-link active" href="{% url 'productos' %}" aria-current="page">PRODUCTOS</a>
             <a class="nav-item nav-link active" href="{% url 'cajas' %}" aria-current="page">CAJAS</a> -->
+            <a name="" id="" class="btn btn-success" href="{% url 'inicio' %}" role="button">Inicio</a>
             <form method="post" action="{% url 'logout' %}">
                 {% csrf_token %}
-                <a name="" id="" class="btn btn-success" href="{% url 'inicio' %}" role="button">Inicio</a>
+                
                 <button type="submit" class="btn btn-danger">Salir</button>
             </form>
         </div>
