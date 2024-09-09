@@ -13,7 +13,7 @@
     <!-- Menú para seleccionar qué formulario mostrar -->
     <form method="get" action="{% url 'agregar' %}" class="form-select-container">
         <div class="form-group-custom">
-            <label for="form_type">Seleccionar lo que quiere agregar:</label>
+            <label for="form_type" class="ag-label-blanco"><h4>Seleccione lo que quiere agregar:</h4></label>
             <select id="form_type" name="form_type" class="form-select" onchange="this.form.submit()">
                 <option value="">-- Seleccionar --</option>
                 <option value="marca" {% if request.GET.form_type == 'marca' %}selected{% endif %}>Agregar Marca</option>
@@ -30,7 +30,7 @@
     {% if form_to_display %}
     <div class="form-card-container">
         <div class="form-card-body">
-            <h5 class="form-card-title">
+            <h5 class="form-card-title titulo-blanco">
                 {% if request.GET.form_type == 'marca' %}Agregar Marca{% endif %}
                 {% if request.GET.form_type == 'categoria' %}Agregar Categoría{% endif %}
                 {% if request.GET.form_type == 'tamaño' %}Agregar Tamaño{% endif %}
@@ -38,11 +38,19 @@
                 {% if request.GET.form_type == 'animal' %}Agregar Animal{% endif %}
                 {% if request.GET.form_type == 'consistencia' %}Agregar Consistencia{% endif %}
             </h5>
-            <form method="post" class="form">
+            <form method="post" class="ag-formulario estilizado-formulario">
                 {% csrf_token %}
                 {{ form_to_display.as_p }}
-                <button type="submit" class="btn-submit">AGREGAR</button>
+                <button type="submit" class="ag-boton-agregar estilizado-boton">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                  </svg>
+                  <span>Agregar</span>
+                </button>
             </form>
+            
+              
         </div>
     </div>
     {% endif %}
