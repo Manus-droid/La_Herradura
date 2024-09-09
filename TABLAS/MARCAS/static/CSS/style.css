@@ -452,7 +452,7 @@ body {
 
 
 /*---------------------------------------crear_productos.html----------------------------------------------------------------------------------*/
-/* Estilos para el formulario de productos */
+/* Estilos para el formulario de productos 
 .styled-form {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -492,7 +492,7 @@ body {
     margin-top: 5px;
 }
 
-/* Estilos mejorados para botones */
+
 .btn {
     padding: 10px 20px;
     border: none;
@@ -512,7 +512,7 @@ body {
     background-color: #ff8c00;
 }
 
-/* Estilos para los botones de categoría (animales, marcas, etc.) */
+
 .category-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -540,7 +540,7 @@ body {
     color: #fff;
 }
 
-/* Estilos específicos para cada tipo de categoría */
+
 .btn-animal { border-color: #4CAF50; color: #4CAF50; }
 .btn-animal:hover { background-color: rgba(76, 175, 80, 0.1); }
 .btn-animal.selected { background-color: #4CAF50; color: #fff; }
@@ -549,7 +549,7 @@ body {
 .btn-marca:hover { background-color: rgba(33, 150, 243, 0.1); }
 .btn-marca.selected { background-color: #2196F3; color: #fff; }
 
-/* Estilos mejorados para los selects (claves foráneas) */
+
 select.form-control {
     appearance: none;
     -webkit-appearance: none;
@@ -580,7 +580,7 @@ select.form-control option {
     color: #fff;
 }
 
-/* Estilo para el placeholder del select */
+
 select.form-control option[value=""][disabled] {
     display: none;
 }
@@ -589,7 +589,7 @@ select.form-control:invalid {
     color: #999;
 }
 
-/* Estilos para inputs de tipo number */
+
 input[type="number"].form-control {
     -moz-appearance: textfield;
 }
@@ -649,7 +649,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
 }
 /*----------------------fin crear_productos.html----------------------------------------------------------------------------*/
 /*------------------------------------------------agregar.html---------------------------------------*/
-/* Estilo para el contenedor principal */
+/* Estilo para el contenedor principal 
 .main-container {
     max-width: 800px; 
     margin: 0 auto; 
@@ -661,7 +661,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     text-align: center; 
 }
 
-/* Estilo para el encabezado principal */
+
 .heading-main {
     font-size: 2.5rem;
     font-weight: 700;
@@ -674,7 +674,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilo del botón "Regresar" */
+
 .btn-return {
     display: inline-block;
     background: linear-gradient(90deg, #ff6f00, #ff8c00);
@@ -685,7 +685,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background 0.3s, transform 0.2s;
-    margin-top: 2rem; /* Ajusta el margen para posicionarlo más abajo */
+    margin-top: 2rem; 
 }
 
 .btn-return:hover {
@@ -693,7 +693,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     transform: scale(1.05);
 }
 
-/* Estilo para el formulario de selección */
+
 .form-select-container {
     margin-bottom: 2rem;
 }
@@ -723,7 +723,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
 }
 
 
-/* Estilo para el contenedor del formulario */
+/* Estilo para el contenedor del formulario 
 .form-card-container {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
@@ -732,7 +732,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
 }
 
 /* Estilo para el botón de enviar formulario */
-/* Nuevo estilo para centrar el botón de guardar */
+/* Nuevo estilo para centrar el botón de guardar 
 .btn-submit-container {
     display: flex;
     justify-content: center;
@@ -785,7 +785,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     font-size: 18px;
 }
 
-/* Estilos para el hover */
+/* Estilos para el hover 
 .c-button.btn-submit:hover {
     background: linear-gradient(140deg, #ffa702 0%, #006699 100%);
     transform: scale(1.05);
@@ -797,7 +797,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Estilo para que el textarea ocupe todo el ancho */
+/* Estilo para que el textarea ocupe todo el ancho 
 .form-group-custom textarea {
     width: 100%;
     min-height: 150px;
@@ -810,7 +810,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     resize: vertical;
 }
 
-/* Ajuste adicional para mantener consistencia en los inputs */
+/* Ajuste adicional para mantener consistencia en los inputs 
 .form-group-custom input[type="text"],
 .form-group-custom input[type="number"],
 .form-group-custom select {
@@ -823,7 +823,7 @@ input[type="number"].form-control::-webkit-inner-spin-button {
     font-size: 1rem;
 }
 
-/* Estilo para el formulario */
+/* Estilo para el formulario 
 .styled-form {
     display: flex;
     flex-direction: column;
@@ -868,9 +868,9 @@ box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 color: white;
 }
 .titulo-blanco {
-    color: white; /* Color blanco para el texto */
-    font-size: 1.5rem; /* Ajusta el tamaño si es necesario */
-    text-align: center; /* Alineación opcional */
+    color: white; /* Color blanco para el texto 
+    font-size: 1.5rem; /* Ajusta el tamaño si es necesario 
+    text-align: center; /* Alineación opcional 
 }
 .heading-main {
     font-family: 'Poppins', sans-serif;
